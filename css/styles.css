@@ -246,11 +246,11 @@ sup {
 }
 
 a {
-  color: var(--bs-link-color);
+  color: var(--bs-btn-color/*--bs-link-color*/);
   text-decoration: underline;
 }
 a:hover {
-  color: var(--bs-link-hover-color);
+  color: var(--bs-accordion-color/*--bs-link-hover-color*/);
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
@@ -385,6 +385,7 @@ button,
 [type=reset],
 [type=submit] {
   -webkit-appearance: button;
+  appearance: button;
 }
 button:not(:disabled),
 [type=button]:not(:disabled),
@@ -443,6 +444,7 @@ legend + * {
 [type=search] {
   outline-offset: -2px;
   -webkit-appearance: textfield;
+  appearance: textfield;
 }
 
 /* rtl:raw:
@@ -464,6 +466,7 @@ legend + * {
 ::file-selector-button {
   font: inherit;
   -webkit-appearance: button;
+  appearance: button;
 }
 
 output {
@@ -3683,7 +3686,7 @@ textarea.form-control-lg {
 .nav-pills {
   --bs-nav-pills-border-radius: 0.5rem;
   --bs-nav-pills-link-active-color: #fff;
-  --bs-nav-pills-link-active-bg: #1abc9c;
+  --bs-nav-pills-link-active-bg: #2f3332;
 }
 .nav-pills .nav-link {
   background: none;
